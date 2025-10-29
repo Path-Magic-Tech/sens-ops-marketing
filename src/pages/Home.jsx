@@ -1,0 +1,134 @@
+import { Link } from 'react-router-dom';
+import './Home.css';
+
+const Home = () => {
+  return (
+    <div className="home">
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="container hero-content">
+          <h1 className="hero-title fade-in-up">
+            The Next Generation of Smart Agriculture
+          </h1>
+          <p className="hero-subtitle fade-in-up">
+            Predicting food spoilage before it happens through proprietary sensors
+            and machine learning, enabling zero-loss storage management.
+          </p>
+          <div className="hero-cta fade-in-up">
+            <Link to="/contact" className="btn btn-primary">
+              Get in Touch
+            </Link>
+            <Link to="/technology" className="btn btn-secondary">
+              Explore Technology
+            </Link>
+          </div>
+        </div>
+        <div className="hero-image">
+          {/* Placeholder for hero image - will be replaced with actual image */}
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="section mission-section">
+        <div className="container text-center">
+          <h2>Our Mission</h2>
+          <p className="mission-text">
+            To revolutionize agriculture through proprietary sensor technology and machine
+            learning that predicts food spoilage before it happens. By enabling true zero-loss
+            storage management, we empower farmers and agricultural businesses to eliminate
+            waste, maximize efficiency, and build a more sustainable future for global food
+            systems.
+          </p>
+        </div>
+      </section>
+
+      {/* Value Propositions */}
+      <section className="section section-dark value-section">
+        <div className="container">
+          <h2 className="text-center">Our Place in the Market</h2>
+          <div className="grid grid-4 value-grid">
+            <div className="value-card">
+              <div className="value-icon">🌾</div>
+              <h3>Servicing Agriculture</h3>
+              <p>
+                Providing cutting-edge solutions that optimize crop storage, detect diseases
+                early, and reduce post-harvest losses.
+              </p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">💡</div>
+              <h3>Simplifying Technology</h3>
+              <p>
+                Creating intuitive solutions that bridge the gap between complex agricultural
+                challenges and user-friendly tools.
+              </p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">🔬</div>
+              <h3>Predictive Intelligence</h3>
+              <p>
+                Our proprietary sensor suite feeds machine learning models that predict spoilage
+                before it occurs, allowing intervention without loss.
+              </p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">📦</div>
+              <h3>Innovating Food Storage</h3>
+              <p>
+                Combining advanced technology with practical solutions to optimize environmental
+                conditions and extend produce shelf life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Preview */}
+      <section className="section solutions-preview">
+        <div className="container">
+          <div className="solutions-content">
+            <div className="solutions-text">
+              <h2>Predictive Storage Intelligence</h2>
+              <p>
+                Our proprietary sensor platform collects critical environmental and chemical data
+                that feeds advanced machine learning models. By continuously learning from real-world
+                storage conditions, our system predicts food spoilage before it happens—enabling
+                proactive intervention and zero-loss management.
+              </p>
+              <ul className="features-list">
+                <li>Proprietary multi-sensor data collection</li>
+                <li>Machine learning-powered predictive analytics</li>
+                <li>Pre-emptive spoilage detection and alerts</li>
+                <li>Continuous model improvement from field data</li>
+              </ul>
+              <Link to="/solutions" className="btn btn-primary">
+                Explore Solutions
+              </Link>
+            </div>
+            <div className="solutions-image">
+              <div className="image-placeholder">
+                <span>Potato Storage Solution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section cta-section">
+        <div className="container text-center">
+          <h2>Join Us in Defining the Future of Food Storage</h2>
+          <p className="cta-text">
+            Ready to optimize your storage operations and reduce waste?
+            Let's discuss how Sens Operations can transform your agricultural business.
+          </p>
+          <Link to="/contact" className="btn btn-primary btn-lg">
+            Get Started Today
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

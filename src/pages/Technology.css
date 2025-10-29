@@ -1,0 +1,262 @@
+/* Tech Hero */
+.tech-hero {
+  padding-top: 120px;
+  padding-bottom: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-charcoal) 0%, #1a1a1a 100%);
+  text-align: center;
+  color: var(--color-cream);
+}
+
+.tech-hero h1 {
+  color: var(--color-cream);
+  margin-bottom: var(--spacing-md);
+}
+
+.tech-hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: var(--color-beige);
+  line-height: 1.8;
+}
+
+/* Tech Content */
+.tech-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.tech-text h2 {
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.tech-text p {
+  color: var(--color-charcoal-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tech-image {
+  height: 400px;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+  background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-light) 100%);
+}
+
+.capabilities-grid {
+  margin-top: var(--spacing-lg);
+}
+
+.capability-card {
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.capability-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.capability-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.capability-card h3 {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.capability-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Disease Detection Section */
+.disease-section {
+  background-color: var(--color-white);
+}
+
+.section-intro {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  font-size: 1.1rem;
+  color: var(--color-charcoal-light);
+}
+
+.disease-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+  margin-top: var(--spacing-lg);
+}
+
+.disease-image {
+  height: 400px;
+}
+
+.disease-text h3 {
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-sm);
+}
+
+.disease-text p {
+  color: var(--color-charcoal-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--color-charcoal-light);
+}
+
+.features-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Integration Section */
+.integration-section {
+  background: linear-gradient(135deg, var(--color-charcoal) 0%, #1a1a1a 100%);
+}
+
+.integration-text {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  font-size: 1.1rem;
+  color: var(--color-beige);
+  line-height: 1.8;
+}
+
+.integration-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.step {
+  padding: var(--spacing-md);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+  margin: 0 auto var(--spacing-sm);
+  font-family: var(--font-serif);
+}
+
+.step h4 {
+  color: var(--color-cream);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.step p {
+  color: var(--color-beige);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-wheat) 0%, var(--color-gold) 100%);
+  color: var(--color-white);
+}
+
+.cta-section h2 {
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-text {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  font-size: 1.1rem;
+  color: var(--color-charcoal-light);
+}
+
+.btn-lg {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-wheat) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--color-charcoal-light);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .tech-content,
+  .disease-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-image,
+  .disease-image {
+    order: -1;
+    height: 300px;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .integration-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-hero {
+    padding-top: 100px;
+  }
+
+  .capabilities-grid,
+  .integration-steps {
+    grid-template-columns: 1fr;
+  }
+}
