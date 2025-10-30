@@ -8,11 +8,11 @@ const Home = () => {
       <section className="hero">
         <div className="container hero-content">
           <h1 className="hero-title fade-in-up">
-            The Next Generation of Smart Agriculture
+            AI-Powered Agricultural Intelligence
           </h1>
           <p className="hero-subtitle fade-in-up">
-            Predicting food spoilage before it happens through proprietary sensors
-            and machine learning, enabling zero-loss storage management.
+            Adaptive machine learning predicts food spoilage before it happens. Our AI-driven
+            sensors enable zero-loss storage management through continuous learning.
           </p>
           <div className="hero-cta fade-in-up">
             <Link to="/contact" className="btn btn-primary">
@@ -33,11 +33,11 @@ const Home = () => {
         <div className="container text-center">
           <h2>Our Mission</h2>
           <p className="mission-text">
-            To revolutionize agriculture through proprietary sensor technology and machine
-            learning that predicts food spoilage before it happens. By enabling true zero-loss
-            storage management, we empower farmers and agricultural businesses to eliminate
-            waste, maximize efficiency, and build a more sustainable future for global food
-            systems.
+            To revolutionize agriculture through proprietary AI-powered sensors and adaptive
+            machine learning that predicts food spoilage before it happens. By enabling true
+            zero-loss storage management with intelligent, self-learning systems, we empower
+            farmers and agricultural businesses to eliminate waste, maximize efficiency, and
+            build a more sustainable future for global food systems.
           </p>
         </div>
       </section>
@@ -64,11 +64,11 @@ const Home = () => {
               </p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🔬</div>
-              <h3>Predictive Intelligence</h3>
+              <div className="value-icon">🤖</div>
+              <h3>Adaptive AI Technology</h3>
               <p>
-                Our proprietary sensor suite feeds machine learning models that predict spoilage
-                before it occurs, allowing intervention without loss.
+                Our proprietary sensors feed adaptive machine learning models that continuously
+                evolve, predicting spoilage with increasing accuracy through AI-powered analysis.
               </p>
             </div>
             <div className="value-card">
@@ -88,27 +88,29 @@ const Home = () => {
         <div className="container">
           <div className="solutions-content">
             <div className="solutions-text">
-              <h2>Predictive Storage Intelligence</h2>
+              <h2>AI-Driven Predictive Storage Intelligence</h2>
               <p>
                 Our proprietary sensor platform collects critical environmental and chemical data
-                that feeds advanced machine learning models. By continuously learning from real-world
-                storage conditions, our system predicts food spoilage before it happens—enabling
+                that feeds adaptive AI models. Through continuous machine learning from real-world
+                storage conditions, our intelligent system predicts food spoilage before it happens—enabling
                 proactive intervention and zero-loss management.
               </p>
               <ul className="features-list">
-                <li>Proprietary multi-sensor data collection</li>
-                <li>Machine learning-powered predictive analytics</li>
-                <li>Pre-emptive spoilage detection and alerts</li>
-                <li>Continuous model improvement from field data</li>
+                <li>AI-powered multi-sensor data collection and analysis</li>
+                <li>Adaptive machine learning with continuous improvement</li>
+                <li>Pre-emptive AI predictions and intelligent alerts</li>
+                <li>Self-optimizing models that learn from every deployment</li>
               </ul>
               <Link to="/solutions" className="btn btn-primary">
                 Explore Solutions
               </Link>
             </div>
             <div className="solutions-image">
-              <div className="image-placeholder">
-                <span>Potato Storage Solution</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&q=80"
+                alt="Potato storage facility"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

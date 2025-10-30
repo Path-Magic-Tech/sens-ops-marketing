@@ -6,10 +6,10 @@ const Solutions = () => {
       {/* Hero Section */}
       <section className="solutions-hero">
         <div className="container">
-          <h1 className="fade-in-up">Predictive Storage Solutions</h1>
+          <h1 className="fade-in-up">AI-Powered Predictive Storage Solutions</h1>
           <p className="solutions-hero-text fade-in-up">
-            Machine learning-powered predictions prevent spoilage before it starts, enabling
-            true zero-loss storage management for agricultural operations.
+            Adaptive machine learning and AI-driven predictions prevent spoilage before it starts,
+            enabling true zero-loss storage management for agricultural operations.
           </p>
         </div>
       </section>
@@ -34,9 +34,11 @@ const Solutions = () => {
               </p>
             </div>
             <div className="solution-image">
-              <div className="image-placeholder">
-                <span>Potato Storage</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&q=80"
+                alt="Potato harvest and storage"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -89,10 +91,10 @@ const Solutions = () => {
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">🤖</div>
-              <h3>Smarter Over Time</h3>
+              <h3>Adaptive AI Learning</h3>
               <p>
-                Machine learning models continuously improve with each deployment,
-                delivering increasingly accurate predictions.
+                Self-optimizing AI models continuously improve with each deployment,
+                delivering increasingly accurate predictions through adaptive learning.
               </p>
             </div>
           </div>
@@ -164,9 +166,11 @@ const Solutions = () => {
         <div className="container">
           <div className="partnership-content">
             <div className="partnership-image">
-              <div className="image-placeholder">
-                <span>Industry Partnership</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+                alt="Agricultural partnership and collaboration"
+                loading="lazy"
+              />
             </div>
             <div className="partnership-text">
               <h2>Strategic Partnerships</h2>
