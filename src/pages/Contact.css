@@ -2,7 +2,12 @@
 .contact-hero {
   padding-top: 120px;
   padding-bottom: var(--spacing-xl);
-  background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-light) 100%);
+  background-image:
+    linear-gradient(rgba(45, 95, 79, 0.85), rgba(66, 123, 104, 0.85)),
+    url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
   color: var(--color-white);
 }
@@ -216,6 +221,7 @@
 @media (max-width: 768px) {
   .contact-hero {
     padding-top: 100px;
+    background-attachment: scroll;
   }
 
   .contact-form-wrapper {

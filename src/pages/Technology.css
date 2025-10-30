@@ -2,7 +2,12 @@
 .tech-hero {
   padding-top: 120px;
   padding-bottom: var(--spacing-xl);
-  background: linear-gradient(135deg, var(--color-charcoal) 0%, #1a1a1a 100%);
+  background-image:
+    linear-gradient(rgba(44, 44, 44, 0.85), rgba(26, 26, 26, 0.85)),
+    url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
   color: var(--color-cream);
 }
@@ -269,6 +274,7 @@
 @media (max-width: 768px) {
   .tech-hero {
     padding-top: 100px;
+    background-attachment: scroll;
   }
 
   .capabilities-grid,

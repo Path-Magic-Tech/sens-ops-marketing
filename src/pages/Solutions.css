@@ -2,7 +2,12 @@
 .solutions-hero {
   padding-top: 120px;
   padding-bottom: var(--spacing-xl);
-  background: linear-gradient(135deg, var(--color-wheat) 0%, var(--color-gold) 100%);
+  background-image:
+    linear-gradient(rgba(230, 200, 160, 0.9), rgba(212, 165, 116, 0.9)),
+    url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -278,6 +283,7 @@
 @media (max-width: 768px) {
   .solutions-hero {
     padding-top: 100px;
+    background-attachment: scroll;
   }
 
   .benefits-grid {

@@ -2,7 +2,12 @@
 .about-hero {
   padding-top: 120px;
   padding-bottom: var(--spacing-xl);
-  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+  background-image:
+    linear-gradient(rgba(245, 241, 232, 0.9), rgba(230, 220, 200, 0.9)),
+    url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -192,6 +197,7 @@
 @media (max-width: 768px) {
   .about-hero {
     padding-top: 100px;
+    background-attachment: scroll;
   }
 
   .values-grid,
