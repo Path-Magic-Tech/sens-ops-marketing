@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -22,9 +23,28 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement form submission logic (e.g., API call, email service)
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
+    const templateParams = {...formData };
+    emailjs
+      .send('service_e5p2zw8', 'template_nxxq0ux', templateParams, {
+        publicKey: 'dEz55kIY-mricyQxF',
+      })
+      .then(
+        () => {
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            subject: '',
+            message: ''
+          });
+          console.log('SUCCESS!');
+          setSubmitted(true);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
 
     // Reset form after 3 seconds
     setTimeout(() => {
@@ -69,23 +89,7 @@ const Contact = () => {
                   <div className="info-icon">📧</div>
                   <div>
                     <h4>General Inquiries</h4>
-                    <p>founders@sensops.com</p>
-                  </div>
-                </div>
-
-                <div className="info-item">
-                  <div className="info-icon">💼</div>
-                  <div>
-                    <h4>Partnership Inquiries</h4>
-                    <p>founders@sensops.com</p>
-                  </div>
-                </div>
-
-                <div className="info-item">
-                  <div className="info-icon">🔧</div>
-                  <div>
-                    <h4>Support</h4>
-                    <p>founders@sensops.com</p>
+                    <p>hello@sensops.com</p>
                   </div>
                 </div>
               </div>
