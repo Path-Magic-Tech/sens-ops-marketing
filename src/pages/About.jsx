@@ -8,6 +8,11 @@ const About = () => {
       bio: 'The founder and CEO of Sens Operations, bringing years of leadership and innovation in electrical engineering to the team. With a proven track record of building successful solutions, Rob is dedicated to driving technology that solves real-world challenges with precision and impact.',
     },
     {
+      name: 'Conor Souhrada',
+      title: 'Founder & CTO',
+      bio: 'A skilled architect and engineer with a focus on leadership and system design, having successfully led engineering teams to build scalable, high-performance platforms. His expertise in implementing robust solutions has driven innovation and growth across multiple industries.',
+    },
+    {
       name: 'Jake Berryman',
       title: 'Founder & CSO',
       bio: 'A dynamic entrepreneur, visionary leader, and proud military veteran with expertise in sales and leadership. Jake has a proven history of transforming innovative ideas into thriving enterprises, having launched multiple groundbreaking technologies and building strong partnerships across industries.',
@@ -16,11 +21,6 @@ const About = () => {
       name: 'Kaleb Hundersmarck',
       title: 'Founder & CPO',
       bio: 'An accomplished software engineer with a strong background in developing advanced tools for a range of industries. Skilled in modern technologies and experienced in leading engineering teams, he brings innovation and adaptability to every project.',
-    },
-    {
-      name: 'Conor Souhrada',
-      title: 'Founder & CTO',
-      bio: 'A skilled software engineer with a focus on leadership and system architecture, having successfully led engineering teams to build scalable, high-performance platforms. His expertise in implementing robust solutions has driven innovation and growth across multiple industries.',
     },
     {
       name: 'Katie Nibbi',
