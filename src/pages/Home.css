@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
   position: relative;
   overflow: hidden;
   background-image:
@@ -215,6 +214,8 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 80vh;
+    background-attachment: scroll;
+    background-size: cover;
   }
 
   .hero-image {
