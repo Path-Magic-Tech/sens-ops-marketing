@@ -6,8 +6,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router basename="/sens-ops-marketing">
+    <Router basename={import.meta.env.BASE_URL}>
       <App />
     </Router>
-  </StrictMode>,
+  </StrictMode>
 )
