@@ -3,10 +3,10 @@
   padding-top: 120px;
   padding-bottom: var(--spacing-xl);
   background-image:
-    linear-gradient(rgba(245, 241, 232, 0.9), rgba(230, 220, 200, 0.9)),
-    url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&q=80');
+    linear-gradient(rgba(245, 241, 232, 0.7), rgba(230, 220, 200, 0.7)),
+    url('https://images.unsplash.com/photo-1627920769541-daa658ed6b59?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2233');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   text-align: center;
 }

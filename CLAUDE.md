@@ -54,8 +54,14 @@ The contact form in `src/pages/Contact.jsx` currently logs submissions to consol
 ## Build Configuration
 
 ### Vite
-- Base path is `/` in `vite.config.js:7`
-- Change `base` if deploying to a GitHub Pages repository path (e.g., `/repo-name/`)
+- Base path is `/sens-ops-marketing/` in `vite.config.js:7` for GitHub Pages deployment
+- The `basename` prop in `src/main.jsx` is set to `import.meta.env.BASE_URL` to sync with Vite's base path
+- This configuration enables proper routing on GitHub Pages at `https://path-magic-tech.github.io/sens-ops-marketing/`
+
+### Cross-Platform Build Script
+- The `postbuild` script uses Node.js's `fs.copyFileSync` to copy `index.html` to `404.html`
+- This approach works on both Windows and Mac/Linux without platform-specific commands
+- The 404.html file is required for client-side routing to work correctly on GitHub Pages
 
 ### GitHub Actions
 Deployment workflow in `.github/workflows/deploy.yml`:
@@ -64,11 +70,30 @@ Deployment workflow in `.github/workflows/deploy.yml`:
 - Builds and deploys `dist/` directory to GitHub Pages
 - Requires GitHub Pages to be enabled in repository settings
 
+### Manual Deployment
+```bash
+npm run deploy  # Uses npx gh-pages -d dist
+```
+
 ## Content Updates
 
 Page content is directly embedded in the JSX files under `src/pages/`. To update text, headings, or structure, edit the respective page component.
 
-Images are currently placeholders with `.image-placeholder` divs. To add real images:
-1. Place images in `public/images/` or `src/assets/`
-2. Replace placeholder divs with `<img>` tags
-3. Update logo in `src/components/Navbar.jsx`
+### Hero Background Images
+All page hero sections use background images from Unsplash with gradient overlays:
+- **Home** (`src/pages/Home.css`): Full-screen hero with parallax effect (`background-attachment: fixed`)
+- **About, Technology, Solutions, Contact**: Hero banners with background images
+- **Mobile optimization**: All hero sections use `background-attachment: scroll` on mobile (via `@media (max-width: 768px)`) to prevent parallax issues
+- **Positioning tips**:
+  - Use `background-position: center` for default centering
+  - Use `background-position: bottom` to show lower portion of image
+  - Use `background-position: center 55%` (or other %) for fine-tuned vertical positioning (0% = top, 50% = center, 100% = bottom)
+- **Opacity**: Gradient overlays use rgba values - adjust the alpha channel (0.7, 0.85, 0.9) to control visibility of background image
+
+### Favicon
+Custom favicon located at `public/favicon.svg` - features "SO" initials in brand colors
+
+### Mobile Responsiveness
+- Home page hero has `padding-top: 80px` on mobile to prevent navbar overlap
+- Other pages have `padding-top: 100px` on mobile (reduced from 120px on desktop)
+- No `margin-top` on `.main-content` - each page handles its own top spacing

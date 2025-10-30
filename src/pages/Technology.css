@@ -4,9 +4,9 @@
   padding-bottom: var(--spacing-xl);
   background-image:
     linear-gradient(rgba(44, 44, 44, 0.85), rgba(26, 26, 26, 0.85)),
-    url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1600&q=80');
+    url('https://plus.unsplash.com/premium_photo-1733266834957-f5c0152198b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2233');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   text-align: center;
   color: var(--color-cream);
