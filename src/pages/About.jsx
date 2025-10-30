@@ -57,9 +57,11 @@ const About = () => {
               </p>
             </div>
             <div className="about-image">
-              <div className="image-placeholder">
-                <span>Agricultural Innovation</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80"
+                alt="Modern agricultural technology"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -92,10 +94,11 @@ const About = () => {
               </p>
             </div>
             <div className="value-item">
-              <h3>Partnership Approach</h3>
+              <h3>Expert Partnerships</h3>
               <p>
-                We work closely with leading agricultural businesses to ensure our solutions
-                meet real-world needs and deliver measurable results.
+                We collaborate with PhD agriculturalists and leading agricultural businesses
+                to ensure our AI solutions meet real-world needs and deliver measurable results
+                backed by scientific expertise.
               </p>
             </div>
           </div>
@@ -123,6 +126,36 @@ const About = () => {
                 <p className="team-bio">{member.bio}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Partnerships Section */}
+      <section className="section partnerships-highlight">
+        <div className="container">
+          <div className="about-content">
+            <div className="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80"
+                alt="Agricultural research and development"
+                loading="lazy"
+              />
+            </div>
+            <div className="about-text">
+              <h2>Strategic Partnerships in R&D</h2>
+              <p>
+                Our development is guided by strategic partnerships with PhD agriculturalists who
+                bring decades of scientific expertise in crop storage, post-harvest management,
+                and agricultural systems. This collaboration ensures our AI and machine learning
+                models are grounded in proven agricultural science.
+              </p>
+              <p>
+                By combining cutting-edge technology with deep domain expertise, we create
+                solutions that address real agricultural challenges with precision and efficacy.
+                Our research partnerships drive continuous innovation in predictive algorithms
+                and sensor technology.
+              </p>
+            </div>
           </div>
         </div>
       </section>

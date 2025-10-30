@@ -6,10 +6,10 @@ const Technology = () => {
       {/* Hero Section */}
       <section className="tech-hero">
         <div className="container">
-          <h1 className="fade-in-up">Predictive Intelligence Through Proprietary Sensors</h1>
+          <h1 className="fade-in-up">Adaptive AI & Proprietary Sensor Technology</h1>
           <p className="tech-hero-text fade-in-up">
-            Our proprietary sensor suite collects comprehensive data that powers machine learning
-            models to predict food spoilage before it happens, eliminating loss.
+            Our proprietary sensor suite collects comprehensive data that powers adaptive AI and
+            machine learning models to predict food spoilage before it happens, eliminating loss.
           </p>
         </div>
       </section>
@@ -19,24 +19,27 @@ const Technology = () => {
         <div className="container">
           <div className="tech-content">
             <div className="tech-text">
-              <h2>From Data Collection to Prediction</h2>
+              <h2>From Data Collection to AI-Powered Prediction</h2>
               <p>
                 Our proprietary sensor technology captures a comprehensive range of environmental
                 and chemical indicators that traditional systems miss. This rich dataset continuously
-                feeds our machine learning models, training them to recognize the subtle patterns
-                that precede spoilage.
+                feeds our adaptive machine learning models, training AI algorithms to recognize the
+                subtle patterns that precede spoilage.
               </p>
               <p>
-                As our system collects more data from real-world deployments, our predictive
-                models become increasingly accurate—learning to forecast spoilage events before
-                they occur. This allows operators to intervene early, adjust storage conditions,
-                and prevent loss entirely rather than simply detecting problems after they've begun.
+                As our intelligent system collects more data from real-world deployments, our AI
+                models become increasingly accurate—adaptively learning to forecast spoilage events
+                before they occur. This self-optimizing AI allows operators to intervene early,
+                adjust storage conditions, and prevent loss entirely rather than simply detecting
+                problems after they've begun.
               </p>
             </div>
             <div className="tech-image">
-              <div className="image-placeholder">
-                <span>Sensor Platform</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+                alt="Advanced sensor technology and data systems"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -65,10 +68,10 @@ const Technology = () => {
             </div>
             <div className="capability-card">
               <div className="capability-icon">🤖</div>
-              <h3>Machine Learning</h3>
+              <h3>Adaptive AI Models</h3>
               <p>
-                Predictive models continuously learn from field data to forecast spoilage
-                before it happens, enabling zero-loss intervention.
+                Self-learning AI continuously adapts from field data to forecast spoilage
+                before it happens, enabling intelligent zero-loss intervention.
               </p>
             </div>
             <div className="capability-card">
@@ -109,9 +112,11 @@ const Technology = () => {
           </p>
           <div className="disease-content">
             <div className="disease-image">
-              <div className="image-placeholder">
-                <span>Predictive Analytics</span>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Data analytics and machine learning"
+                loading="lazy"
+              />
             </div>
             <div className="disease-text">
               <h3>Zero-Loss Prevention</h3>
