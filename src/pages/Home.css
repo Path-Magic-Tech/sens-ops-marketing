@@ -45,6 +45,10 @@
   margin: var(--spacing-xs) 0;
 }
 
+.hero-cta .btn:last-child {
+  margin-bottom: var(--spacing-sm);
+}
+
 .hero-cta .btn-secondary {
   background-color: var(--color-wheat);
   color: var(--color-charcoal);
