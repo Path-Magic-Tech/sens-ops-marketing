@@ -216,6 +216,7 @@
     min-height: 80vh;
     background-attachment: scroll;
     background-size: cover;
+    padding-top: 80px;
   }
 
   .hero-image {
