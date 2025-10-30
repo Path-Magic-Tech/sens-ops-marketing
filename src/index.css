@@ -34,7 +34,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Ensure programmatic and anchor scrolling are instant */
+  scroll-behavior: auto;
 }
 
 body {
