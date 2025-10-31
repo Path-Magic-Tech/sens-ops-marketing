@@ -15,9 +15,6 @@ const Home = () => {
             sensors enable zero-loss storage management through continuous learning.
           </p>
           <div className="hero-cta fade-in-up">
-            <Link to="/contact" className="btn btn-primary">
-              Get in Touch
-            </Link>
             <Link to="/technology" className="btn btn-secondary">
               Explore Technology
             </Link>

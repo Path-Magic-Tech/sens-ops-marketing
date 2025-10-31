@@ -42,11 +42,7 @@
 }
 
 .hero-cta .btn {
-  margin: var(--spacing-xs) 0;
-}
-
-.hero-cta .btn:last-child {
-  margin-bottom: var(--spacing-sm);
+  margin: var(--spacing-sm) 0;
 }
 
 .hero-cta .btn-secondary {
