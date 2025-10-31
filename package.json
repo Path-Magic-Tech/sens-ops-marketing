@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://path-magic-tech.github.io/sens-ops-marketing/",
+  "homepage": "https://sensops.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
