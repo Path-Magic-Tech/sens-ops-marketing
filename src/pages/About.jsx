@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       name: 'Kaleb Hundersmarck',
-      title: 'Founder & CPO',
+      title: 'Founder & CTO',
       bio: 'An accomplished software engineer with a strong background in developing advanced tools for a range of industries. Skilled in modern technologies and experienced in leading engineering teams, he brings innovation and adaptability to every project.',
     },
     {
