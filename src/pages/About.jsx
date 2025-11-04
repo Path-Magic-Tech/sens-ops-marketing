@@ -3,14 +3,9 @@ import './About.css';
 const About = () => {
   const team = [
     {
-      name: 'Robert Brown',
-      title: 'Founder & CEO',
-      bio: 'The founder and CEO of Sens Operations, bringing years of leadership and innovation in electrical engineering to the team. With a proven track record of building successful solutions, Rob is dedicated to driving technology that solves real-world challenges with precision and impact.',
-    },
-    {
       name: 'Conor Souhrada',
-      title: 'Founder & CTO',
-      bio: 'A skilled architect and engineer with a focus on leadership and system design, having successfully led engineering teams to build scalable, high-performance platforms. His expertise in implementing robust solutions has driven innovation and growth across multiple industries.',
+      title: 'Founder & CEO',
+      bio: 'A skilled architect and engineer with a focus on leadership, having successfully led engineering teams to build scalable, high-performance platforms. His expertise in implementing robust solutions has driven innovation and growth across multiple industries.',
     },
     {
       name: 'Jake Berryman',
