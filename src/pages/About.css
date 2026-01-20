@@ -117,7 +117,7 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-white);
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
 }
 
 .team-card h3 {
