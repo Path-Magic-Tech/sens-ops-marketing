@@ -197,7 +197,7 @@
   font-weight: bold;
   color: var(--color-white);
   margin: 0 auto var(--spacing-sm);
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
 }
 
 .step h4 {
