@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import logomark from '../assets/logomark.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-logo">Sens Operations</h3>
+            <img src={logomark} alt="Sens Operations" className="footer-logomark" />
             <p className="footer-tagline">
               The next generation of smart agriculture
             </p>

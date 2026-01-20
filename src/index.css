@@ -1,14 +1,14 @@
 /* Design System - Sens Operations */
 :root {
-  /* Color Palette */
+  /* Color Palette - Brand Colors */
   --color-cream: #F5F1E8;
   --color-beige: #E8E3D6;
-  --color-charcoal: #2C2C2C;
+  --color-charcoal: #343d3a;
   --color-charcoal-light: #4A4A4A;
   --color-wheat: #D4A574;
   --color-gold: #C89647;
-  --color-green: #2D5F4F;
-  --color-green-light: #4A8070;
+  --color-green: #145029;
+  --color-green-light: #1a6b36;
   --color-white: #FFFFFF;
 
   /* Typography */
