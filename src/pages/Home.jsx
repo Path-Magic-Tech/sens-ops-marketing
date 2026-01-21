@@ -2,16 +2,20 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
+  const basePath = import.meta.env.BASE_URL;
+
   return (
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
         <div className="container hero-content">
-          <h1 className="hero-title fade-in-up">
-            AI-Powered Agricultural Intelligence
-          </h1>
+          <img
+            src={`${basePath}logo-primary.svg`}
+            alt="Sens Operations"
+            className="hero-logo fade-in-up"
+          />
           <p className="hero-subtitle fade-in-up">
-            Adaptive machine learning predicts food spoilage before it happens. Our AI-driven
+            AI-Powered Agricultural Intelligence. Adaptive machine learning predicts food spoilage before it happens. Our AI-driven
             sensors enable zero-loss storage management through continuous learning.
           </p>
           <div className="hero-cta fade-in-up">

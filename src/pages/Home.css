@@ -20,10 +20,20 @@
   z-index: 2;
 }
 
+.hero-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto var(--spacing-md);
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
 .hero-title {
   color: var(--color-white);
   margin-bottom: var(--spacing-md);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
 }
 
 .hero-subtitle {

@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logomark from '../assets/logomark.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const basePath = import.meta.env.BASE_URL;
 
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <img src={logomark} alt="Sens Operations" className="footer-logomark" />
+            <img src={`${basePath}logomark.svg`} alt="Sens Operations" className="footer-logomark" />
             <p className="footer-tagline">
               The next generation of smart agriculture
             </p>
