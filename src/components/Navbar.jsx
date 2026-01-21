@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const basePath = import.meta.env.BASE_URL;
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -22,7 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Sens Operations</span>
+          <img src={`${basePath}logomark.svg`} alt="Sens Operations" className="logo-image" />
         </Link>
 
         <button

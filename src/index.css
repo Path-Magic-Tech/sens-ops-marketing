@@ -1,19 +1,85 @@
 /* Design System - Sens Operations */
+
+/* Blinker Font Family */
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blinker';
+  src: url('./assets/fonts/Blinker-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  /* Color Palette */
+  /* Color Palette - Brand Colors */
   --color-cream: #F5F1E8;
   --color-beige: #E8E3D6;
-  --color-charcoal: #2C2C2C;
+  --color-charcoal: #343d3a;
   --color-charcoal-light: #4A4A4A;
   --color-wheat: #D4A574;
   --color-gold: #C89647;
-  --color-green: #2D5F4F;
-  --color-green-light: #4A8070;
+  --color-green: #145029;
+  --color-green-light: #1a6b36;
   --color-white: #FFFFFF;
 
   /* Typography */
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-heading: 'Blinker', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Blinker', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -50,8 +116,8 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
 }

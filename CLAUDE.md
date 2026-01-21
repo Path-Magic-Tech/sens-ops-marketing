@@ -36,11 +36,16 @@ The project uses GitHub Actions for automatic deployment to GitHub Pages on push
   - `/contact` - Contact
 
 ### Design System
-All design tokens are defined as CSS custom properties in `src/index.css:2-27`:
-- Colors: Cream background (#F5F1E8), Charcoal text (#2C2C2C), Green CTAs (#2D5F4F), Wheat/Gold accents
-- Typography: Playfair Display (serif) for headings, system sans-serif for body
+All design tokens are defined as CSS custom properties in `src/index.css`:
+- Colors: Cream background (#F5F1E8), Charcoal text (#343d3a), Green CTAs (#145029), Wheat/Gold accents
+- Typography: Blinker font for headings and body text (loaded from `src/assets/fonts/`)
 - Utility classes: `.container`, `.section`, `.grid-*`, `.card`, `.btn-*`
 - Responsive spacing and grid system with mobile breakpoint at 768px
+
+### Images & Assets
+- **Images** (logos, icons, etc.) should be placed in `public/` folder and referenced using `import.meta.env.BASE_URL` prefix
+- **Fonts** are stored in `src/assets/fonts/` and loaded via `@font-face` in `src/index.css`
+- This approach ensures images work correctly with the GitHub Pages base path configuration
 
 ### Component Structure
 - **Shared components**: `src/components/` (Navbar, Footer)
@@ -90,8 +95,10 @@ All page hero sections use background images from Unsplash with gradient overlay
   - Use `background-position: center 55%` (or other %) for fine-tuned vertical positioning (0% = top, 50% = center, 100% = bottom)
 - **Opacity**: Gradient overlays use rgba values - adjust the alpha channel (0.7, 0.85, 0.9) to control visibility of background image
 
-### Favicon
-Custom favicon located at `public/favicon.svg` - features "SO" initials in brand colors
+### Favicon & Logos
+- Custom favicon at `public/favicon.svg` - SensOps logomark in brand green (#145029)
+- Primary logo at `public/logo.svg` - full SensOps logo for navbar
+- Logomark at `public/logomark.svg` - icon-only version for footer and small spaces
 
 ### Mobile Responsiveness
 - Home page hero has `padding-top: 80px` on mobile to prevent navbar overlap
