@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import './Contact.css';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeerewey';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,8 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -21,43 +24,37 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const templateParams = {...formData };
-    emailjs
-      .send('service_e5p2zw8', 'template_nxxq0ux', templateParams, {
-        publicKey: 'dEz55kIY-mricyQxF',
-      })
-      .then(
-        () => {
-          setFormData({
-            name: '',
-            email: '',
-            company: '',
-            phone: '',
-            subject: '',
-            message: ''
-          });
-          console.log('SUCCESS!');
-          setSubmitted(true);
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    setIsSubmitting(true);
+    setError(false);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        subject: '',
-        message: '',
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      setSubmitted(false);
-    }, 3000);
+
+      if (response.ok) {
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -190,8 +187,14 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <button type="submit" className="btn btn-primary btn-full">
-                    Send Message
+                  {error && (
+                    <p style={{ color: '#c0392b', textAlign: 'center' }}>
+                      Something went wrong. Please try again.
+                    </p>
+                  )}
+
+                  <button type="submit" className="btn btn-primary btn-full" disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}

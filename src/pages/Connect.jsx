@@ -120,7 +120,7 @@ const Connect = () => {
                   onKeyDown={(e) => e.key === 'Enter' && setSelectedPathway('investor_partner')}
                 >
                   <div className="pathway-icon">&#129309;</div>
-                  <h3>Investors &amp; Partners</h3>
+                  <h3>Investors &amp; Partnerships</h3>
                   <p>Start a conversation about partnership or investment.</p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ const Connect = () => {
                         </div>
 
                         <div className="form-group">
-                          <label htmlFor="connect-notes">Notes (optional)</label>
+                          <label htmlFor="connect-notes">What would you like to discuss? (optional)</label>
                           <textarea
                             id="connect-notes"
                             name="notes"
