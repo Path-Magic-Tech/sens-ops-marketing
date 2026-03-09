@@ -1,0 +1,33 @@
+/* Not Found Hero */
+.not-found-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-green) 0%, #1a6b36 50%, var(--color-green) 100%);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.not-found-hero h1 {
+  color: var(--color-white);
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.not-found-text {
+  max-width: 500px;
+  margin: 0 auto var(--spacing-md);
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .not-found-hero {
+    padding-top: 80px;
+  }
+}
