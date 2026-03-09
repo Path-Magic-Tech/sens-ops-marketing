@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import Technology from './pages/Technology.jsx'
 import Solutions from './pages/Solutions.jsx'
 import Contact from './pages/Contact.jsx'
+import Connect from './pages/Connect.jsx'
 
 const router = createBrowserRouter(
   [
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         { path: 'technology', element: <Technology /> },
         { path: 'solutions', element: <Solutions /> },
         { path: 'contact', element: <Contact /> },
+        { path: 'connect', element: <Connect /> },
       ],
     },
   ],
